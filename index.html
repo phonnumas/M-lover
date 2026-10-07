@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ff8fb5" />
+    <title>เรียงรัก 💌</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@400;500;600;700&family=Nunito:wght@700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <div class="sparkle sparkle-one">✦</div><div class="sparkle sparkle-two">♡</div><div class="sparkle sparkle-three">✦</div>
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="เริ่มเกมใหม่"><span>💌</span> เรียงรัก</a>
+        <div class="stats" aria-label="คะแนนและสถิติ"><div class="stat"><span class="stat-label">คะแนน</span><strong id="score">0</strong></div><div class="stat streak"><span>🔥</span><strong id="streak">0</strong></div></div>
+      </header>
+      <section class="game-card" aria-live="polite">
+        <div class="level-row"><span id="level-pill">ด่าน 1 / 4</span><span id="progress-label">เริ่มต้นการผจญภัย</span></div><div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
+        <p class="eyebrow">WORD PUZZLE</p><h1 id="clue">สิ่งที่เบ่งบานในสวน</h1><p class="hint-text" id="hint-text">คำใบ้: มีกลิ่นหอมและมอบแทนความรู้สึกได้</p>
+        <div class="answer-zone" id="answer-zone" aria-label="ช่องคำตอบ"></div><p class="message" id="message">แตะตัวอักษรเพื่อเรียงคำให้ถูกนะ ♡</p><div class="letter-bank" id="letter-bank" aria-label="ตัวอักษรสำหรับเลือก"></div>
+        <div class="actions"><button class="soft-button" id="hint-button" type="button"><span>💡</span> ขอคำใบ้ <small>-10</small></button><button class="reset-button" id="reset-button" type="button" aria-label="เริ่มคำนี้ใหม่">↻</button></div>
+      </section>
+      <section class="mini-card"><div class="avatar">🐰</div><div><strong>ไปต่อเลยคนเก่ง!</strong><p>เรียงให้ถูกติดกันเพื่อเก็บ streak ✨</p></div><span class="heart">♥</span></section>
+    </main>
+    <div class="modal hidden" id="win-modal" role="dialog" aria-modal="true" aria-labelledby="win-title"><div class="modal-card"><div class="modal-stars">✦ ⋆ ✦</div><div class="trophy">🏆</div><p class="eyebrow">YOU DID IT!</p><h2 id="win-title">เก่งที่สุดเลย! 💖</h2><p id="win-copy">เธอพิชิตทุกคำได้แล้ว</p><div class="final-score"><span>คะแนนรวม</span><strong id="final-score">0</strong></div><button class="primary-button" id="play-again" type="button">เล่นอีกครั้ง ✨</button></div></div>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
